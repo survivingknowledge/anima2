@@ -1,0 +1,9 @@
+<div class="">
+  <%= @novel.name %>
+  <% if @novel.try(:author) %>
+    by <%= @novel.try(:author) %>
+  <% end %>
+</div>
+<div class="">
+  <%= @novel.description %>
+</div>

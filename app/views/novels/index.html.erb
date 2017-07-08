@@ -1,0 +1,7 @@
+<% if @novels.empty? %>
+  <p>No Novels Listed</p>
+<% else %>
+  <% @novels.each do |novel| %>
+    <%= render partial: 'novel', locals: { novel: novel } %>
+  <% end %>
+<% end %>

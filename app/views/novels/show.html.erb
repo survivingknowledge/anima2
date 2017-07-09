@@ -1,7 +1,7 @@
 <div class="">
   <%= @novel.name %>
-  <% if @novel.try(:author) %>
-    by <%= @novel.try(:author) %>
+  <% if !@novel.author.blank? %>
+    by <%= @novel.author %>
   <% end %>
 </div>
 <div class="">
